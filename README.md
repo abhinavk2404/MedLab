@@ -16,10 +16,12 @@ It is a Machine Learning Project which is integrated with Web Technologies for e
 
 ### Web Technologies used- 
 Frontend Technologies - HTML, CSS, Bootstrap 
+
 Backend Technologies - Flask
 
 ### For Machine Learning
 IDE used - Jupyter Notebook
+
 Programming Language - Python
 
 ### Installations Required
