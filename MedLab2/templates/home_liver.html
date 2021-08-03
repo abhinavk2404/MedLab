@@ -1,0 +1,226 @@
+{% extends "base_home.html" %}
+
+{% block title %}
+<title>Liver Disease Diagnosis</title>
+{% endblock %}
+
+ {% block heading %}
+      <h1>Welcome To <span style="color: rgba(255, 48, 75, 0.8);"> Liver Disease Diagnosis </span> <i class="fas fa-clinic-medical"></i> </h1>
+      <h2>Diagnose yourself free of cost with our Disease Diagnosis website</h2>
+  {% endblock %}
+  {% block info %}
+  
+    <div class="container">
+        <div class="section-title">
+          <h1 class="text-center">Information Required for Diagnosis</h1>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Bilirubin</h4>
+              <p>Bilirubin attached by the liver to glucuronic acid, a glucose-derived
+                   acid, is called direct, or conjugated, bilirubin.
+                    Bilirubin not attached to glucuronic acid is called indirect, or unconjugated, bilirubin.
+                   All the bilirubin in your blood together is called total bilirubin.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+             
+              <h4>Alkaline phosphatase</h4>
+              <p>Alkaline phosphatase is one kind enzyme found in your body.
+                   Enzymes are proteins that help chemical reactions happen. 
+                   For instance, they can break big molecules down into smaller parts, or they can
+                   help smaller molecules join together to form bigger structures.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-lg-4">
+            <div class="service shadow">
+              
+              <h4>Alamine Aminotransferase</h4>
+              <p>The alanine aminotransferase (ALT) test is a blood test that
+                   checks for liver damage. Your doctor can use this test to find
+                   out if a disease, drug, or injury has damaged your liver.</p>
+            </div>
+          </div>
+  
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Aspartate Aminotransferase</h4>
+              <p>The aspartate aminotransferase (AST) test is a blood test 
+                  that checks for liver damage. Your doctor might order this test to find
+                   out if you have liver disease and to monitor your treatment.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Total Protiens</h4>
+              <p>Albumin and globulin are two types of protein in your body. The total protein test 
+                  measures the total amount albumin and globulin in your body. </p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Albumin</h4>
+              <p>An albumin blood test measures the amount of albumin in
+                   your blood. Albumin is a protein made by your liver. </p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Albumin and Globulin Ratio</h4>
+              <p>The total serum protein test measures all the proteins in your blood.
+                   It can also check the amount of albumin you have 
+                  compared to globulin, or what’s called your “A/G ratio.”</p>
+            </div>
+          </div>
+          
+          
+          
+  
+        </div>
+  
+      </div>
+    <br>
+    {% endblock %}
+    {% block form %}
+        
+    
+        <div class="text-center">
+        <p class="h1">Liver Disease Diagnosis</p>
+        </div>
+        <br>
+    <div class="container">
+        <div class="col-md-10 col-centered">
+        <div class="col-md-12">
+                <form action="{{ url_for('liver_pred') }}" method="post">
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="age">Age</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="age" name="age" placeholder="Age">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="gender">Gender</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="gender" name="gender" placeholder="1 for Male, 0 for Female">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Total_Bilirubin">Total Bilirubin</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Total_Bilirubin" name="Total_Bilirubin" placeholder="Total Bilirubin">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Direct_Bilirubin">Direct Bilirubin</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Direct_Bilirubin" name="Direct_Bilirubin" placeholder="Direct Bilirubin">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Alkaline_Phosphotase">Alkaline Phosphatase</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Alkaline_Phosphotase" name="Alkaline_Phosphotase" placeholder="Alkaline Phosphatase">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Alamine_Aminotransferase">Alamine Aminotransferase</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Alamine_Aminotransferase" name="Alamine_Aminotransferase" placeholder="Alamine Aminotransferase">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Aspartate_Aminotransferase">Aspartate Aminotransferase</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Aspartate_Aminotransferase" name="Aspartate_Aminotransferase" placeholder="Aspartate Aminotransferase">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Total_Protiens">Total Protiens</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Total_Protiens" name="Total_Protiens" placeholder="Total Protiens">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Albumin">Albumin</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Albumin" name="Albumin" placeholder="Albumin">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Albumin_and_Globulin_Ratio">Albumin and Globulin Ratio</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Albumin_and_Globulin_Ratio" name="Albumin_and_Globulin_Ratio" placeholder="Albumin and Globulin Ratio">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        
+                        <center>
+                            <button type="submit" class="btn btn-light btn-lg btn-block" id="sbbtn" value="submit">Submit</button>
+                        </center>
+                        <br>
+                </form>
+            </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        {% endblock %}

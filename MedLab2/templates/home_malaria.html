@@ -1,0 +1,273 @@
+{% extends "base_home.html" %}
+
+{% block title %}
+<title>Malaria Diagnosis</title>
+{% endblock %}
+
+ {% block heading %}
+      <h1>Welcome To <span style="color: rgba(255, 48, 75, 0.8);"> Malaria Diagnosis </span> <i class="fas fa-clinic-medical"></i> </h1>
+      <h2>Diagnose yourself free of cost with our Disease Diagnosis website</h2>
+  {% endblock %}
+  {% block info %}
+  
+    <div class="container">
+        <div class="section-title">
+          <h1 class="text-center">Information Required for Diagnosis</h1>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Convulsion</h4>
+              <p>A condition in which muscles contract and relax 
+                  quickly and cause uncontrolled shaking of the body. </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+             
+              <h4>Anemia</h4>
+              <p>Anemia is defined as a low number of red blood cells. In a routine 
+                  blood test, anemia is reported as a low hemoglobin or hematocrit.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-lg-4">
+            <div class="service shadow">
+              
+              <h4>Jaundice</h4>
+              <p>Jaundice is a term used to describe a yellowish 
+                  tinge to the skin and the
+                   whites of the eye. Body fluids may also be yellow.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service c shadow">
+              
+              <h4>Hypoglycemia</h4>
+              <p>Hypoglycemia is a condition in which your blood 
+                  sugar (glucose) level is lower 
+                  than normal. Glucose is your body's main energy source.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Hyperpyrexia</h4>
+              <p>Hyperpyrexia is term for a very high fever. The medical
+                   criterion for hyperpyrexia is when someone is running 
+                  a body temperature of more than 106.7°F or 41.5°C.</p>
+            </div>
+          </div>
+  
+          
+  
+        </div>
+  
+      </div>
+    <br>
+    {% endblock %}
+    {% block form %}
+    
+        <div class="text-center">
+        <p class="h1">Malaria Diagnosis</p>
+        </div>
+        <br>
+    <div class="container">
+        <div class="col-md-10 col-centered">
+        <div class="col-md-12">
+                <form action="{{ url_for('malaria_pred') }}" method="post">
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Gender</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="sex" name="sex" placeholder="1 for Male, 0 for Female">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="fever">Fever</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="fever" name="fever" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="cold">Cold</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="cold" name="cold" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="rigor">Rigor</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="rigor" name="rigor" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="fatigue">Fatigue</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="fatigue" name="fatigue" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="headace">Headace</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="headace" name="headace" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="bitter_tongue">Bitter tongue</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="bitter_tongue" name="bitter_tongue" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+			
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="vomitting">Vomitting</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="vomitting" name="vomitting" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+			
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="diarrhea">Diarrhea</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="diarrhea" name="diarrhea" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Convulsion">Convulsion </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Convulsion" name="Convulsion" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Anemia">Anemia </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Anemia" name="Anemia" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="jundice">Jaundice </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="jundice" name="jundice" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="cocacola_urine">Cocacola Urine </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="cocacola_urine" name="cocacola_urine" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="hypoglycemia">Hypoglycemia </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="hypoglycemia" name="hypoglycemia" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="prostraction">Prostraction </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="prostraction" name="prostraction" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="hyperpyrexia">Hyperpyrexia </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="hyperpyrexia" name="hyperpyrexia" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                        <center>
+                            <button type="submit" class="btn btn-light btn-lg btn-block" id="sbbtn" value="submit">Submit</button>
+                        </center>
+                        <br>
+                </form>
+            </div>
+        </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        {% endblock %}

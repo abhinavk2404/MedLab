@@ -1,0 +1,193 @@
+{% extends "base_home.html" %}
+
+{% block title %}
+<title>Diabetes Diagnosis</title>
+{% endblock %}
+
+ {% block heading %}
+      <h1>Welcome To <span style="color: rgba(255, 48, 75, 0.8);"> Diabetes Diagnosis </span> <i class="fas fa-clinic-medical"></i> </h1>
+      <h2>Diagnose yourself free of cost with our Disease Diagnosis website</h2>
+  {% endblock %}
+  {% block info %}
+  
+    <div class="container">
+        <div class="section-title">
+          <h1 class="text-center">Information Required for Diagnosis</h1>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Polyuria</h4>
+              <p>Polyuria is a condition where the body urinates more 
+                  than usual and passes excessive or abnormally
+                   large amounts of urine each time you urinate.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+             
+              <h4>Polydipsia</h4>
+              <p>Polydipsia is a medical name for the feeling of 
+                  extreme thirstiness. Polydipsia is often 
+                  linked to urinary conditions that cause you to urinate a lot.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-lg-4">
+            <div class="service shadow">
+              
+              <h4>Partial Paresis</h4>
+              <p>Paresis involves the weakening of a muscle or group of muscles.
+                   It may also be referred to as partial or mild 
+                   paralysis. Unlike paralysis, people with paresis can 
+                  still move their muscles. These movements are just weaker than normal.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service c shadow">
+              
+              <h4>Alopecia</h4>
+              <p>Alopecia is the medical term for hair loss.
+                   Hair loss may occur naturally or it may be 
+                  related to disease or the use of certain medications.</p>
+            </div>
+          </div>
+  
+          
+  
+        </div>
+  
+      </div>
+    <br>
+    {% endblock %}
+    {% block form %}
+        <div class="text-center">
+        <p class="h1">Diabetes Diagnosis</p>
+        </div>
+        <br>
+    <div class="container">
+        <div class="col-md-10 col-centered">
+        <div class="col-md-12">
+                <form action="{{ url_for('diabetes_pred') }}" method="post">
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Polyuria">Polyuria</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="Polyuria" name="Polyuria" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Polydipsia">Polydipsia</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="Polydipsia" name="Polydipsia" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="age">Age</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="age" name="age" placeholder="Age">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Gender">Gender</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="Gender" name="Gender" placeholder="1 for Male, 0 for Female">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="partial paresis">Partial Paresis</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="partial paresis" name="partial paresis" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sudden wieght loss">Sudden Wieght Loss</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="sudden wieght loss" name="sudden wieght loss" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="chest_pain_type_typical angina">Irritability</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="Irritability" name="Irritability" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+			
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="delayed healing">Delayed Healing</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="delayed healing" name="delayed healing" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+			
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Alopecia">Alopecia</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Alopecia" name="Alopecia" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="st_depression">Itching </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Itching" name="Itching" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        
+                        <center>
+                            <button type="submit" class="btn btn-light btn-lg btn-block" id="sbbtn" value="submit">Submit</button>
+                        </center>
+                        <br>
+                </form>
+            </div>
+    </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        {% endblock %}

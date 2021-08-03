@@ -1,0 +1,458 @@
+
+<!-- </head> -->
+<!doctype html>
+<html lang="en">
+  <head>
+      {% block title %}{% endblock %}
+    <!-- <title>Heart Disease Diagnosis</title> -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{{url_for('static', filename='favicon.png')}}" type="image/x-icon"/>
+
+    <style>
+   
+
+
+    </style>
+  </head>
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-back fixed-top" 
+    id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="/">MedLab <span></span> <i class="fas fa-clinic-medical"></i></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button"
+           data-toggle="collapse" data-target="#navbarResponsive" 
+           aria-controls="navbarResponsive" aria-expanded="false" 
+           aria-label="Toggle navigation"><i class="fas fa-bars fa-2x"></i>
+           </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" 
+                    href="#home">Home</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" 
+                  href="#service">Diagnosis</a></li> -->
+                  <!-- <li class="nav-item"><a class="nav-link" 
+                    href="#contact">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#about">About</a></li> -->
+                  <!-- <li class="nav-item"><a class="nav-link" 
+                    href="#about">Medical Camps</a></li>
+                  <li class="nav-item"><a class="nav-link"
+                     href="#projects">Team</a></li> -->
+                  
+              </ul>
+          </div>
+      </div>
+  </nav>
+   <!-- <br><br><br><br> -->
+<!-- End Header -->    
+   <!-- ======= Hero Section ======= -->
+   <a name="home"></a>
+   <section id="hero" class="d-flex align-items-center">
+       
+    <div class="container text-center position-relative">
+        {% block heading %} {% endblock %}
+      <!-- <h1>Welcome To <span style="color: rgba(255, 48, 75, 0.8);"> Heart Disease Diagnosis </span> <i class="fas fa-heartbeat"></i> </h1>
+      <h2>Diagnose yourself free of cost with our Disease Diagnosis website</h2> -->
+      <!-- <a href="#info" class="main-btn">Get Started</a> -->
+      <!-- {% block button %} {% endblock %} -->
+    </div>
+  </section><!-- End Hero -->
+  <!-- <img src="{{url_for('static', filename='doc.jpg')}}" /> -->
+ 
+  
+        <footer class="footer py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left"> <span style="color: #000; font-weight: bold;"> By <span style="color: rgb(255, 255, 255);"> Abhinav Kaushik </span><br></div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-back btn-social mx-2" href="https://www.linkedin.com/in/abhinav-kaushik-90552a194/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i></a>
+                          <a class="btn btn-back btn-social mx-2" href="https://github.com/abhinavk2404" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                            <a class="btn btn-back btn-social mx-2" href="https://abhinav-kaushik.netlify.app/" target="_blank">
+                              <i class="fas fa-user"></i> </a>
+                            
+                    </div>
+                    <div class="col-lg-4 text-lg-right">
+                    <p>Copyright © 2021 : All Rights Reserved</p>  
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+<style>
+    /* html {
+  height: 100%;
+} */
+body {
+  background-color: ghostwhite;
+    margin:0;
+  padding:0;
+  font-family: sans-serif;
+  /* background: linear-gradient(#141e30, #243b55); */
+  /* background-color: black; */
+}
+#backtogreen{
+    
+font-family: "Poppins", sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 14px;
+letter-spacing: 1px;
+display: inline-block;
+padding: 8px 28px;
+border-radius: 50px;
+transition: 0.5s;
+margin: 10px;
+border: 2px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+
+}
+#backtogreen:hover {
+    background: rgb(6, 158, 51);
+    border: 2px solid rgb(6, 158, 51);
+    text-decoration: none;
+    color:#fff;
+  }
+  #backtored{
+    
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    
+    }
+    #backtored:hover {
+        background: rgba(255, 48, 75, 0.8);
+        border: 2px solid rgba(255, 48, 75, 0.8);
+        text-decoration: none;
+        color:#fff;
+      }
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.col-md-12{
+  background-image: url("{{url_for('static', filename='bg-form4.jpg')}}");
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+}
+#sbbtn{
+    /* background-color:  rgb(0, 157, 230); */
+  background-color: #f5f5f5;
+    /* border: 2px solid rgb(0, 157, 230); */
+    border-radius: 40px;
+    /* margin-bottom: ; */
+}
+#sbbtn:hover{
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #ffffff;
+  background-color:  rgba(255, 48, 75, 0.8);
+  color: #fff;
+}
+.col-lg-4 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    /* border-radius: 40px; */
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+*{
+    scroll-behavior: smooth;
+}
+.nav-back{
+    background: rgba(255, 48, 75, 0.8);
+    color: #fff;
+}
+.navbar-brand{
+  color: rgb(255, 255, 255);
+}
+.navbar-brand:hover{
+  color: #fff;
+}
+.nav-link{
+  color: rgb(255, 255, 255);
+}
+.nav-link:hover{
+  color:#fff;
+}
+.navbar-toggler{
+  outline: none!important;
+}
+
+   
+ 
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 100vh;
+    /* background: url("/templates/images/doc.jpg") center center; */
+    background-color:#000;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #hero .container {
+    padding-top: 80px;
+  }
+  
+  #hero:before {
+content: "";
+/* background-image: url("{{url_for('static', filename='diag.jpg')}}"); */
+background-color: #000;
+background-size: cover;
+background-position: center;
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+}
+  
+  
+#hero h1 {
+margin: 0 0 10px 0;
+font-size: 48px;
+font-weight: 700;
+line-height: 56px;
+color: rgb(255, 255, 255);
+}
+
+#hero h2 {
+color: rgb(255, 255, 255);
+margin-bottom: 40px;
+font-size: 15px;
+font-weight: 500;
+font-family: "Open Sans", sans-serif;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+}
+
+.main-btn {
+font-family: "Poppins", sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 14px;
+letter-spacing: 1px;
+display: inline-block;
+padding: 8px 28px;
+border-radius: 50px;
+transition: 0.5s;
+margin: 10px;
+border: 2px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+}
+  
+   .main-btn:hover {
+    background: rgba(255, 48, 75, 0.8);
+    border: 2px solid rgba(255, 48, 75, 0.8);
+    text-decoration: none;
+    color:#fff;
+  }
+   
+  /*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+ .service {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: rgb(127, 212, 252);
+    box-shadow: 0px 5px 90px 0px rgba(3, 117, 111, 0.63);
+  }
+  
+ .service .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    background: #f5f5f5;
+    border-radius: 50px;
+  }
+  
+   .service .icon i {
+    font-size: 32px;
+    transition: 0.5s;
+    line-height: 1;
+    position: relative;
+  }
+  
+   .service h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+  }
+  
+   .service h4 a {
+    color: #000;
+    transition: ease-in-out 0.3s;
+  }
+  
+   .service p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+    .services i{
+    color: rgb(24, 0, 161);
+  }
+ 
+  /*----about -section*/
+  .about-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .about-heading {
+    text-transform: uppercase;
+  }
+  
+  .about-heading .about-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  
+  .about-heading .about-heading-lower {
+    display: block;
+    font-size: 38px;
+    font-weight: 100;
+  }
+  
+  .bg-faded {
+    background-color: rgba(59, 37, 255, 0.8);
+  }
+
+  .about-button .btn-color{
+    background: rgba(59, 37, 255, 0.8);
+    font-weight: bold;
+    color: #fff;
+  }
+  .about {
+    position: relative;
+  }
+  
+  @media (min-width: 992px) {
+    .about .about-img {
+      width: 75%;
+      float: right;
+    }
+    .about .about-text {
+      left: 0;
+      width: 60%;
+      margin-top: 3rem;
+      position: absolute;
+    }
+    .about .about-text .about-button {
+      width: 100%;
+      left: 0;
+      position: absolute;
+      bottom: -2rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .about .about-text {
+      width: 45%;
+    }
+  }
+  
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact-box {
+    color: #000;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(65, 76, 100, 0.05);
+    padding: 20px 0 30px 0;
+    background:rgb(127, 212, 252);
+  }
+  
+  .contact-box i {
+    font-size: 32px;
+    color: rgb(24, 0, 161);
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .contact-box h3 {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .contact-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .contact button{
+    background: rgba(59, 37, 255, 0.8);
+    border: none;
+    padding: 10px;
+  }
+
+ .contact button:hover{
+   background: rgba(59, 37, 255, 0.8);
+   color: #fff;
+ } 
+ 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  background:rgba(255, 48, 75, 0.8);
+}
+.footer .btn-back{
+  background: #fff;
+  color: rgba(255, 48, 75, 0.8);
+}
+.footer .text{
+  color: #000;
+}
+
+
+</style>
+
+</html>

@@ -1,0 +1,16 @@
+{% extends "base_result.html" %}
+
+{% block title %}
+<title>Liver Disease Diagnosis</title>
+{% endblock %}
+
+ {% block heading %}
+        <h1 style="font-size: 100px; color: rgb(6, 158, 51);"> <i class="fas fa-smile-beam"></i> </h1>
+      <h1>You have been diagnosed with <span style="color: rgb(6, 158, 51);">No Liver Disease  </span> </h1>
+      <p class="alert alert-success">The algorithm has diagnosed you with <a href="#" class="alert-link">No Liver Disease</a> based on your inputs. However it might be better to talk to a doctor.</p>
+      {% block button %}
+      <a href="/home_liver" class="main-btn" id="backtogreen" >Back To Diagnosis</a>
+        {% endblock %} 
+  {% endblock %}
+ 
+    

@@ -1,0 +1,312 @@
+{% extends "base_index.html" %}
+
+  {% block content %}
+    <nav class="navbar navbar-expand-lg nav-back fixed-top" 
+    id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="#">MedLab <span></span> <i class="fas fa-clinic-medical"></i></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button"
+           data-toggle="collapse" data-target="#navbarResponsive" 
+           aria-controls="navbarResponsive" aria-expanded="false" 
+           aria-label="Toggle navigation"><i class="fas fa-bars fa-2x"></i>
+           </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" 
+                    href="#home">Home</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" 
+                  href="#service">Diagnosis</a></li> -->
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Diagnosis
+                    </a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#service" >All Disease</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/home_brain_tumor" >Brain Tumor Diagnosis</a>
+                      <a class="dropdown-item" href="/home_heart" >Heart Disease Diagnosis</a>
+                      <a class="dropdown-item" href="/home_liver" >Liver Disease Diagnosis</a>
+                      <a class="dropdown-item" href="/home_kidney" >Chronic Kidney Disease Diagnosis</a>
+                      <a class="dropdown-item" href="/home_diabetes" >Diabetes Diagnosis</a>
+                      <a class="dropdown-item" href="/home_stroke" >Stroke Risk Diagnosis</a>
+                      <a class="dropdown-item" href="/home_malaria" >Malaria Diagnosis</a>
+                      <a class="dropdown-item" href="/home_hepatitis" >Hepatitis Diagnosis</a>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#contact">Contact</a></li>
+                  
+                  
+              </ul>
+          </div>
+      </div>
+  </nav>
+   <!-- <br><br><br><br> -->
+<!-- End Header -->    
+   <!-- ======= Hero Section ======= -->
+   <a name="home"></a>
+   <section id="hero" class="d-flex align-items-center">
+       
+    <div class="container text-center position-relative">
+      <h1>Welcome To <span style="color: rgba(255, 48, 75, 0.8);"> MedLab </span> <i class="fas fa-clinic-medical"></i> </h1>
+      <h2>Diagnose yourself free of cost with our Disease Diagnosis website</h2>
+      <br><br><br>
+      <a href="#service" class="main-btn">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+ <br>
+   <!-- ======= Services Section ======= -->
+   <a name="service"></a>
+   <section id="services" class="services mt-5 mb-3 py-3">
+       
+    <div class="container">
+      <div class="section-title">
+        <h1 class="text-center">Disease Diagnosis</h1>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+          <div class="service shadow">
+            <div class="icon">
+            <i class="fas fa-brain"></i>
+            </div>
+            <h4><a href="/home_brain_tumor" target="_blank">Brain Tumor Diagnosis</a></h4>
+            <p>A brain tumor is a collection, or mass, of abnormal cells in 
+              your brain. Your skull, which encloses your brain, is very rigid.
+               Any growth inside such a restricted space can cause problems. .</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+          <div class="service shadow">
+            <div class="icon">
+                <i class="fas fa-heartbeat"></i>
+            </div>
+            <h4><a href="/home_heart" target="_blank">Heart Disease Diagnosis</a></h4>
+            <p>Heart disease describes a range of conditions that affect your heart. 
+              It is a collection of diseases and conditions that cause cardiovascular problems.</p>
+          </div>
+        </div>
+
+        
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+          <div class="service shadow">
+            <div class="icon">
+                <i class="fas fa-wheelchair"></i>
+            </div>
+            <h4><a href="/home_liver" target="_blank">Liver Disease Diagnosis</a></h4>
+            <p>Liver disease is any disturbance of liver function that causes
+               illness. The liver is responsible for many critical functions within
+                the body and if it become diseased or injured, 
+              the loss of those functions can cause significant damage to the body.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+          <div class="service c shadow">
+            <div class="icon">
+                <i class="fas fa-bacteria"></i>
+            </div>
+            <h4><a href="/home_kidney" target="_blank">Chronic Kidney Disease Diagnosis</a></h4>
+            <p>Chronic kidney disease includes conditions that damage your kidneys and
+               decrease their ability to keep you healthy. If kidney disease gets worse, 
+              wastes can build to high levels in your blood and make you feel sick.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+          <div class="service shadow">
+            <div class="icon">            
+          <i class="fas fa-dice-d6"></i>
+            </div>
+            <h4><a href="/home_diabetes" target="_blank">Diabetes Diagnosis</a></h4>
+            <p>Diabetes is a disease that occurs when your blood glucose, also 
+              called blood sugar, is too high. Blood glucose is your
+               main source of energy and comes from the food you eat.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+          <div class="service c shadow">
+            <div class="icon">
+                <i class="fas fa-brain"></i>
+            </div>
+            <h4><a href="/home_stroke" target="_blank">Stroke Risk Diagnosis</a></h4>
+            <p>A stroke occurs when a blood vessel in the brain ruptures and 
+              bleeds, or when there’s a blockage in the blood supply to the brain. The rupture or 
+              blockage prevents blood and oxygen from reaching the brain’s tissues.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+          <div class="service shadow">
+            <div class="icon">
+            <i class="fas fa-disease"></i>
+            </div>
+            <h4><a href="/home_malaria" target="_blank">Malaria Diagnosis</a></h4>
+            <p>Malaria is a life-threatening disease. It’s typically 
+              transmitted through the bite of an infected Anopheles mosquito.
+               Infected mosquitoes carry the Plasmodium parasite. When this mosquito 
+              bites you, the parasite is released into your bloodstream.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+          <div class="service shadow">
+            <div class="icon">
+            <i class="fas fa-lungs"></i>
+            </div>
+            <h4><a href="/home_hepatitis" target="_blank">Hepatitis Diagnosis</a></h4>
+            <p>Hepatitis is an inflammation of the liver. The condition
+               can be self-limiting or can progress to fibrosis (scarring), cirrhosis 
+               or liver cancer. Hepatitis viruses are the most common cause of hepatitis
+                in the world but other infections, toxic substances
+               (e.g. alcohol, certain drugs), and autoimmune diseases can also cause hepatitis.</p>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+  <br>
+  <!-- About -->
+
+  <a name="about"></a>
+  <br>
+  <!-- <section id="aboutt">
+    <div class="aboutt cont">
+      <div class="col-left">
+        <div class="aboutt-img">
+          <img src="./img/img-2.png" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">Aboutt <span>me</span></h1>
+        <h2>Front End Developer</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, 
+          velit alias eius non illum beatae atque repellat ratione qui veritatis
+           repudiandae adipisci maiores. At inventore necessitatibus deserunt 
+           exercitationem cumque earum omnis ipsum rem accusantium quis, quas 
+           quia, accusamus provident suscipit magni! Expedita sint ad dolore, 
+           commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut,
+            deserunt reprehenderit libero enim!</p>
+         <a href="#" class="cta">Download Resume</a> -->
+      </div>
+    </div>
+  </section> 
+  <section class="about">
+   <div class="container">
+
+     <div class="section-title text-center mt-5">
+       <h1>About</h1>
+     </div>
+     <br><br>
+  <div class="container-fluid main_header">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="row">
+          <div class="col-md-6 imag">
+            
+            
+            <img class="abtimg" src="{{url_for('static', filename='ak.jpeg')}}" alt="" width="350px" height="350px">
+             
+             
+            <!--<a class="btn btn-back btn-social mx-2" href="https://github.com/abhinavk2404" target="_blank">
+              <i class="fab fa-github"></i></a>
+            <a class="btn btn-back btn-social mx-2" href="https://abhinav-kaushik.netlify.app/" target="_blank">
+              <i class="fas fa-user"></i> </a> -->
+          </div>
+          <!-- <div class="col-md-6 abt-box">
+            <p class="abtp">Abhinav Kaushik</p>
+                    <h2 class="abth">Student at J.C. Bose University of Science 
+                      and Technology <br><span class="abtspn"> Web Developer</span> and 
+                      <span class="abtspn">Competetive Programmer.</span><br> <span style="color: beige;"> Data Science and ML aspirant.</span></h2>
+                      
+          </div> -->
+          <div class="col-md-6 abt-box">
+            <p class="abtp">Abhinav Kaushik</p>
+                    <p style="color: black; font-size: 1.2rem; font-weight: bold;">Student at J.C. Bose University of Science and Technology <br>
+                      Web Developer and Competetive Programmer <br>
+                      <span>Data Science and ML aspirant </span></p>
+                     <!-- <a href="#contact"> <button class="btn btn-danger">Contact</button></a> -->
+                     <div style=" background-color: rgb(255, 255, 255);">
+                      <a class="btn btn-back btn-social mx-2" href="https://www.linkedin.com/in/abhinav-kaushik-90552a194/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i></a>
+                      <a class="btn btn-back btn-social mx-2" href="https://github.com/abhinavk2404" target="_blank">
+                        <i class="fab fa-github"></i></a>
+                        <a class="btn btn-back btn-social mx-2" href="https://abhinav-kaushik.netlify.app/" target="_blank">
+                          <i class="fas fa-user"></i> </a>
+                     </div>
+          </div>
+          
+        </div>
+
+      </div>
+       
+    </div>
+</div>
+</section>
+  <br>
+
+   <a name="contact"></a>
+   <section class="contact">
+    <div class="container">
+
+      <div class="section-title text-center mt-5">
+        <h1>Contact</h1>
+      </div>
+      <br><br>
+      <div class="row">
+
+        <div class="col-lg-12">
+
+          <div class="row">
+            <div class="col-md-4 cnb">
+              <div class="contact-box mt-4">
+                <i class="fas fa-map-signs"></i>
+                <h3>Address</h3>
+                <p>Sector - 9 <br> Karnal </p>
+              </div>
+            </div>
+            <div class="col-md-4 cnb">
+              <div class="contact-box mt-4">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>abhinavkaushik0202@gmail.com<br>abhinavk2404@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-md-4 cnb">
+              <div class="contact-box mt-4">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>+91-7419110819<br>+91-9416293437</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+       
+
+      </div>
+
+    </div>
+  </div>
+  </section>
+  <!-- End Contact Section -->
+  <!-- Footer-->
+  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    {% endblock %}

@@ -1,0 +1,666 @@
+/* ==================================================
+  Medical Camp SEction
+  ================================================== */
+  /* .camp {
+    background-color: rgba(59, 37, 255, 0.8);
+    padding-bottom: 0;
+  }
+  
+  .camp h2 {
+    color: #000;
+    margin-bottom: 25px;
+  }
+  
+  .camp-grid {
+    margin-top: 65px;
+  }
+  
+  .camp-grid .row {
+    margin: 0;
+  }
+  
+  .camp-grid .row > div {
+    padding: 0;
+  }
+  
+  .camp-grid .row > div .card img {
+    width: 100%;
+  }
+  
+  .camp-grid .row > div .card .camp-text {
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .camp-grid .row > div .card .camp-text > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .camp-grid .row > div .card .camp-text .card-title {
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .camp-grid .row > div .card .camp-text .card-text {
+    color: #fff;
+    opacity: .75;
+    padding: 0 45px;
+  }
+  
+  .camp-grid .row > div .card:hover .camp-text {
+    opacity: 1;
+    visibility: visible;
+  } */
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+/* .team {
+    background: #fff;
+  }
+  
+  .team .member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .team .member .image {
+    overflow: hidden;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+  }
+  
+  .team .member .image img {
+    transition: ease-in-out 0.3s;
+  }
+  
+  .team .member:hover img {
+    transform: scale(1.1);
+  }
+  
+  .team .member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #36343a;
+  }
+  
+  .team .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+  }
+  
+  .team .member span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #b5b3ba;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .team .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+  }
+  
+  .team .member .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .team .member .social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: rgba(59, 37, 255, 0.8);
+    
+  }
+  
+  .team .member .social a i {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 2px;
+  }
+  
+  .team .member .social a:hover {
+    background: rgba(59, 37, 255, 0.8);
+  }
+  
+  .team .member .social a + a {
+    margin-left: 8px;
+  } */
+
+  <!-- ======= About Section ======= -->
+ <!-- <section class="about-section clearfix py-5">
+  <div class="container">
+    <div class="about">
+      <img class="about-img img-fluid mb-3 mb-lg-0 rounded" 
+      src="images/camp1.jpg" alt="">
+      <div class="about-text left-0 text-center bg-faded p-5 rounded">
+        <h2 class="about-heading mb-4">
+          <span class="about-heading-upper">Welcome</span>
+          <span class="about-heading-lower">To Our Hospital</span>
+        </h2>
+        <p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Aut quod laboriosam eligendi, repellendus cumque ducimus minus libero 
+          autem sint sed deserunt 
+          qui ullam porro quasi dignissimos. Pariatur commodi hic in!
+          autem sint sed deserunt 
+          
+        </p>
+        <div class="about-button mx-auto">
+          <a class="btn btn-color btn-lg" href="#">Know More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!--end of about section-->
+
+  <!-- ======= Camps Section ======= -->
+  <!-- <section class="camp">
+
+    <div class="container text-center">
+      <h2 class="py-3">
+        Medical Camps
+      </h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Iure sint ad iusto cumque numquam in!
+      </p>
+    </div>
+
+    <div class="camp-grid">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <img src="images/camp1.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    Lorem Ipsum Dolor
+                  </h3>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <img src="images/camp2.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    Lorem Ipsum Dolor
+                  </h3>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+           <img  src="images/camp3.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    Lorem Ipsum Dolor
+                  </h3>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <img  src="images/camp4.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    Lorem Ipsum Dolor
+                  </h3>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+              <img  src="images/camp7.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    Lorem Ipsum Dolor
+                  </h3>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <img  src="images/camp5.jpg" alt="">
+            
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    Lorem Ipsum Dolor
+                  </h3>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+            <img  src="images/camp6.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    Lorem Ipsum Dolor
+                  </h3>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-block">
+          <img  src="images/camp8.jpg"alt="">
+              <div class="camp-text">
+                <div>
+                  <h3 class="card-title">
+                    Lorem Ipsum Dolor
+                  </h3>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- </section> -->
+  <!-- End Portfolio Section -->
+<!-- ======= Team Section ======= -->
+<!-- <section id="team" class="team mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>Our Amazing hardworking and enthusiastic team.
+              Our Amazing hardworking and enthusiastic team
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="member">
+                <div class="image"><img src="images/doc-3.jpg" 
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Jessica Chang</h4>
+                  <span> Executive Officer</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <div class="social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""> <i class="fab fa-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div class="member">
+                <div class="image"><img src="images/doc-3.jpg" 
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Jacqueline Chang</h4>
+                  <span>Medicine Department</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""> <i class="fab fa-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4">
+              <div class="member">
+                <div class="image"><img src="images/doc-2.jpg" 
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>John Doe</h4>
+                  <span>MS</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""> <i class="fab fa-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4">
+              <div class="member">
+                <div class="image">
+                  <img src="images/doc-2.jpg" 
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Jade Joe</h4>
+                  <span>Accountant</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <div class="social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""> <i class="fab fa-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>End Team Section -->
+   <!-- ======= Contact Section ======= -->
+   <a name="contact"></a>
+   <section class="contact">
+    <div class="container">
+
+      <div class="section-title text-center mt-5">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-12">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="contact-box">
+                <i class="fas fa-map-signs"></i>
+                <h3>Address</h3>
+                <p>Lorem Brasilia Zip code: 45687 </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-box mt-4">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>test@example.com<br>contact@example.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-box mt-4">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>+55 61 1234 789 <br>+55 61 123 4567</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="col-lg-6">
+          <form>
+            <div class="form-row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" 
+                placeholder="Your Name">
+                
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email" 
+                id="email" placeholder="Your Email">
+                
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" 
+              id="subject" placeholder="Subject" >
+              </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5"></textarea>
+             </div>
+             <div class="text-center">
+               <button type="submit">Send Message</button></div>
+          </form>
+        </div> -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Heart Disease Diagnosis</title>
+</head>
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Disease Diagnosis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<body>
+    
+    <div class="jumbotron hero-nature">
+        <h1 class="hero-title" style="color: red;">You have been diagnosed with Heart Disease</h1>
+        <p class="alert alert-danger">The algorithm has diagnosed you with <a href="#" class="alert-link">Heart Disease</a> based on your inputs. Please consult a Doctor.</p>
+    </div>
+    <div class="text-center">
+        <a href="https://www.healthline.com/health/heart-disease" style="text-decoration: none;" target="_blank"> 
+    <button type="button" class="btn btn-danger btn-lg btn-block">Click here to learn more about Heart Disease Symptoms and Treatment</button>
+    </a>
+</div>
+    <style>
+    div.jumbotron.hero-nature {
+        color: 3d3d3d;
+        text-align: center;
+        background: url('bg.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    body {
+      background-color: #dddddd;
+    }
+
+    .col-lg-4 {
+        color: #3d3d3d;
+    }
+    </style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+-----------------------------------------------------------------------
+
+from __future__ import division, print_function
+# coding=utf-8
+import sys
+import os
+import glob
+import re
+import numpy as np
+
+# Keras
+from keras.applications.imagenet_utils import preprocess_input, decode_predictions
+from keras.models import load_model
+from keras.preprocessing import image
+
+# Flask utils
+from flask import Flask, redirect, url_for, request, render_template
+from werkzeug.utils import secure_filename
+from gevent.pywsgi import WSGIServer
+
+# Define a flask app
+app = Flask(__name__)
+
+# Model saved with Keras model.save()
+MODEL_PATH = 'models/model_resnet.h5'
+
+# Load your trained model
+model = load_model(MODEL_PATH)
+model._make_predict_function()          # Necessary
+# print('Model loaded. Start serving...')
+
+# You can also use pretrained model from Keras
+# Check https://keras.io/applications/
+#from keras.applications.resnet50 import ResNet50
+#model = ResNet50(weights='imagenet')
+#model.save('')
+print('Model loaded. Check http://127.0.0.1:5000/')
+
+
+def model_predict(img_path, model):
+    img = image.load_img(img_path, target_size=(224, 224))
+
+    # Preprocessing the image
+    x = image.img_to_array(img)
+    # x = np.true_divide(x, 255)
+    x = np.expand_dims(x, axis=0)
+
+    # Be careful how your trained model deals with the input
+    # otherwise, it won't make correct prediction!
+    x = preprocess_input(x, mode='caffe')
+
+    preds = model.predict(x)
+    return preds
+
+
+@app.route('/', methods=['GET'])
+def index():
+    # Main page
+    return render_template('index.html')
+
+
+@app.route('/predict', methods=['GET', 'POST'])
+def upload():
+    if request.method == 'POST':
+        # Get the file from post request
+        f = request.files['file']
+
+        # Save the file to ./uploads
+        basepath = os.path.dirname(__file__)
+        file_path = os.path.join(
+            basepath, 'uploads', secure_filename(f.filename))
+        f.save(file_path)
+
+        # Make prediction
+        preds = model_predict(file_path, model)
+
+        # Process your result for human
+        # pred_class = preds.argmax(axis=-1)            # Simple argmax
+        pred_class = decode_predictions(preds, top=1)   # ImageNet Decode
+        result = str(pred_class[0][0][1])               # Convert to string
+        return result
+    return None
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

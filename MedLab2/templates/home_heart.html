@@ -1,0 +1,248 @@
+{% extends "base_home.html" %}
+
+{% block title %}
+<title>Heart Disease Diagnosis</title>
+{% endblock %}
+
+ {% block heading %}
+      <h1>Welcome To <span style="color: rgba(255, 48, 75, 0.8);"> Heart Disease Diagnosis </span> <i class="fas fa-clinic-medical"></i> </h1>
+      <h2>Diagnose yourself free of cost with our Disease Diagnosis website</h2>
+  {% endblock %}
+  {% block info %}
+  
+    <div class="container">
+        <div class="section-title">
+          <h1 class="text-center">Information Required for Diagnosis</h1>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Cholestrol</h4>
+              <p>Cholesterol is a waxy substance. It’s not inherently “bad.” Your body 
+                  needs it to build cells and make vitamins and other hormones.
+                   But too much cholesterol can pose a problem.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+             
+              <h4>Fasting Blood Sugar</h4>
+              <p>Fasting blood sugar levels give vital clues about how a person’s body
+                   is managing blood sugar. Blood sugar 
+                  tends to peak about an hour after eating and declines after that.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-lg-4">
+            <div class="service shadow">
+              
+              <h4>Max Heart Rate Achieved</h4>
+              <p>Your heart rate, or pulse, is the number of times your heart beats
+                   in 1 minute. Heart rates vary from person to person. 
+                  It’s lower when you’re at rest and higher when you exercise.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service c shadow">
+              
+              <h4>Exercise Induced Angina</h4>
+              <p>Angina is caused by reduced blood flow to your heart muscle. 
+                  Your blood carries oxygen, which your heart muscle needs
+                   to survive. When your heart muscle isn't
+                   getting enough oxygen, it causes a condition called ischemia.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>ST Depression</h4>
+              <p>ST depression in ECG at entry indicates severe coronary 
+                  lesions and large benefits of an early invasive
+                   treatment strategy in unstable coronary artery disease</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Chest Pain Type Typical Angina</h4>
+              <p>Angina is a type of chest pain caused by reduced blood flow
+                   to the heart. Angina is a symptom of coronary artery disease</p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Rest ECG Left Ventricular Hypertrophy</h4>
+              <p>Left ventricular hypertrophy, or LVH, is a term for a heart's
+                   left pumping chamber that has thickened and may 
+                   not be pumping efficiently. Sometimes problems such as
+                   aortic stenosis or high blood pressure overwork the heart muscle.</p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Rest ECG</h4>
+              <p>The resting ECG is a simple, quick and painless test. 
+                  The resting ECG can detect certain heart conditions such as
+                   hypertrophy of heart, ischemia, myocardial infarction, sequelae
+                    of myocardial infarction, cardiac arrhythmias, etc.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>ST Slope</h4>
+              <p> The ST segment shift relative to exercise-induced increments
+                   in heart rate, the ST/heart rate slope (ST/HR slope), 
+                   has been proposed as a more accurate ECG criterion
+                   for diagnosing significant coronary artery disease (CAD).</p>
+            </div>
+          </div>
+          
+  
+        </div>
+  
+      </div>
+    <br>
+    {% endblock %}
+    {% block form %}
+    
+        <div class="text-center">
+        <p class="h1" style=" color: rgb(0, 0, 0);">Heart Disease Diagnosis</p>
+        </div>
+<br>
+    <div class="container">
+    <div class="col-md-10 col-centered">
+        <div class="col-md-12">
+                <form action="{{ url_for('heart_pred') }}" method="post">
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="age">Age</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="age" name="age" placeholder="Age">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="cholesterol">Cholesterol</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="cholesterol" name="cholesterol" placeholder="Cholesterol">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="fasting_blood_sugar">Fasting Blood Sugar</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="fasting_blood_sugar	" name="fasting_blood_sugar" placeholder="If Blood sugar levels on fasting > 120 mg/dl -> 1 for Yes, 0 for NO">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="max_heart_rate_achieved">Max Heart Rate Achieved</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="max_heart_rate_achieved" name="max_heart_rate_achieved" placeholder="Max Heart Rate Achieved">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="exercise_induced_angina">Exercise Induced Angina</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="exercise_induced_angina" name="exercise_induced_angina" placeholder="Angina induced by exercise -> 1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="st_depression">ST Depression </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="st_depression" name="st_depression" placeholder="ST Depression">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="chest_pain_type_typical angina">Chest Pain Type Typical Angina	</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="chest_pain_type_typical angina" name="chest_pain_type_typical angina" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+			
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="rest_ecg_left ventricular hypertrophy">Rest ECG Left Ventricular Hypertrophy</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="rest_ecg_left ventricular hypertrophy" name="rest_ecg_left ventricular hypertrophy" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+			
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="rest_ecg_normal">Rest ECG Normal</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="rest_ecg_normal" name="rest_ecg_normal" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+			
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="st_slope_flat">ST Slope Flat</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="st_slope_flat" name="st_slope_flat" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+			
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="st_slope_upsloping">ST Slope Upsloping</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="st_slope_upsloping" name="st_slope_upsloping" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        
+                        <br>
+                        <center>
+                            <button type="submit" class="btn btn-light btn-lg btn-block"  id="sbbtn" value="submit">Submit</button>
+                        </center>
+                        <br>
+                </form>
+            </div>
+          </div>
+        </div>
+        {% endblock %}
+    

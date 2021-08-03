@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MedLab</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{{url_for('static', filename='favicon.png')}}" type="image/x-icon"/>
+    <style>
+body{
+font-family: 'Roboto', sans-serif;
+background-color: ghostwhite;
+}
+
+.abtimg{
+  border-radius: 50%;
+  /* border: 4px solid rgba(255, 48, 75, 0.8); */
+  box-shadow: 1px 1px 1px rgb(142, 177, 255) , 2px 2px 5px rgb(142, 177, 255) , 0px 0px 10px rgb(142, 177, 255) ;
+}
+.abtimg:hover{
+  opacity: 0.5;
+}
+.abt-box{
+  color: rgb(255, 255, 255);
+text-align: center;
+box-shadow: 0px 0px 10px 1px rgb(143, 196, 193);
+padding: 20px 0 30px 0;
+/* background-image: linear-gradient(rgb(182, 182, 255),white); */
+background-color: rgb(0, 221, 221);
+margin: auto;
+}
+.abtp{
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.abth{
+  color: #000000;
+  margin: 0.2em;
+  padding: 0.2em;
+}
+.abtspn{
+  color: #0b009e;
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+*{
+scroll-behavior: smooth;
+}
+.nav-back{
+background: rgba(255, 48, 75, 0.8);
+color: #fff;
+}
+.navbar-brand{
+color: rgb(255, 255, 255);
+}
+.navbar-brand:hover{
+color: #fff;
+}
+.nav-link{
+color: rgb(255, 255, 255);
+}
+.nav-link:hover{
+color:#fff;
+}
+.navbar-toggler{
+outline: none!important;
+}
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+width: 100%;
+height: 100vh;
+/* background: url("/templates/images/doc.jpg") center center; */
+background-color:#000;
+background-size: cover;
+position: relative;
+}
+
+#hero .container {
+padding-top: 80px;
+}
+
+#hero:before {
+content: "";
+background-image: url("{{url_for('static', filename='bg1.jpg')}}");
+background-size: cover;
+background-position: center;
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+}
+
+#hero h1 {
+margin: 0 0 10px 0;
+font-size: 48px;
+font-weight: 700;
+line-height: 56px;
+color: rgb(0, 0, 0);
+}
+
+#hero h2 {
+color: rgb(0, 0, 0);
+margin-bottom: 40px;
+font-size: 15px;
+font-weight: 500;
+font-family: "Open Sans", sans-serif;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+}
+
+.main-btn {
+font-family: "Poppins", sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 14px;
+letter-spacing: 1px;
+display: inline-block;
+padding: 8px 28px;
+border-radius: 50px;
+transition: 0.5s;
+margin: 10px;
+border: 2px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+}
+
+.main-btn:hover {
+background: rgba(255, 48, 75, 0.8);
+border: 2px solid rgba(255, 48, 75, 0.8);
+text-decoration: none;
+color:#fff;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.service {
+text-align: center;
+padding: 70px 20px 80px 20px;
+transition: all ease-in-out 0.2s;
+/* background-image: linear-gradient(rgb(118, 162, 255),rgb(0, 255, 221),white); */
+/* background-image: linear-gradient(rgb(182, 182, 255),white); */
+background-color: rgb(0, 221, 221);
+font-weight: bold;
+/* font-size: 0.8rem; */
+/* color: white; */
+/* box-shadow: 1px 1px 5px black, 2px 2px 10px black , 2px 2px 15px black ; */
+}
+
+.service .icon {
+margin: 0 auto;
+width: 64px;
+height: 64px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: ease-in-out 0.3s;
+position: relative;
+background: #f5f5f5;
+border-radius: 50px;
+}
+
+.service .icon i {
+font-size: 32px;
+transition: 0.5s;
+line-height: 1;
+position: relative;
+}
+
+.service h4 {
+font-weight: 600;
+margin: 10px 0 15px 0;
+font-size: 25px;
+}
+
+.service h4 a {
+color: rgb(255, 255, 255);
+transition: ease-in-out 0.3s;
+}
+.service h4 a:hover{
+  color: #0b009e;
+}
+.service p {
+line-height: 24px;
+font-size: 16px;
+margin-bottom: 0;
+}
+
+.services i{
+color: rgb(0, 0, 0);
+}
+/* About Section */
+#aboutt .aboutt {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+#aboutt .col-left {
+	width: 250px;
+	height: 360px;
+}
+#aboutt .col-right {
+	width: 100%;
+}
+#aboutt .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: .2rem;
+	margin-bottom: 10px;
+}
+#aboutt .col-right p {
+	margin-bottom: 20px;
+}
+#aboutt .col-right .cta {
+	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#aboutt .col-left .aboutt-img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px solid white;
+}
+#aboutt .col-left .aboutt-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid crimson;
+	z-index: -1;
+}
+/* End About Section */
+
+/* ----about -section
+.about-section {
+margin-top: 5rem;
+margin-bottom: 5rem;
+}
+
+.about-heading {
+text-transform: uppercase;
+}
+
+.about-heading .about-heading-upper {
+display: block;
+font-size: 1rem;
+font-weight: 800;
+}
+
+.about-heading .about-heading-lower {
+display: block;
+font-size: 38px;
+font-weight: 100;
+}
+
+.bg-faded {
+background-color: rgba(59, 37, 255, 0.8);
+}
+
+.about-button .btn-color{
+background: rgba(59, 37, 255, 0.8);
+font-weight: bold;
+color: #fff;
+}
+.about {
+position: relative;
+}
+
+@media (min-width: 992px) {
+.about .about-img {
+width: 75%;
+float: right;
+}
+.about .about-text {
+left: 0;
+width: 60%;
+margin-top: 3rem;
+position: absolute;
+}
+.about .about-text .about-button {
+width: 100%;
+left: 0;
+position: absolute;
+bottom: -2rem;
+}
+}
+
+@media (min-width: 1200px) {
+.about .about-text {
+width: 45%;
+}
+} */
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact-box {
+color: #000;
+text-align: center;
+box-shadow: 0px 0px 10px 1px rgb(143, 196, 193);
+padding: 20px 0 30px 0;
+/* background-image: linear-gradient(rgb(182, 182, 255),white); */
+background-color: rgb(0, 221, 221);
+}
+/* .cnb  :hover{
+  box-shadow: 1px 1px 5px rgba(65, 76, 100, 0.05),1px 1px 10px rgb(63, 110, 108);
+} */
+.contact-box i {
+font-size: 32px;
+color: rgb(0, 0, 0);
+border-radius: 50%;
+padding: 8px;
+}
+
+.contact-box h3 {
+font-size: 20px;
+color: rgb(255, 255, 255);
+font-weight: bold;
+margin: 10px 0;
+}
+
+.contact-box p {
+padding: 0;
+line-height: 24px;
+font-size: 14px;
+margin-bottom: 0;
+}
+.contact button{
+background: rgba(59, 37, 255, 0.8);
+border: none;
+padding: 10px;
+}
+
+.contact button:hover{
+background: rgba(59, 37, 255, 0.8);
+color: #fff;
+} 
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+text-align: center;
+font-size: 0.9rem;
+background:rgba(255, 48, 75, 0.8);
+}
+.footer .btn-back{
+background: #fff;
+color: rgba(255, 48, 75, 0.8);
+}
+.footer .text{
+color: #000;
+}
+
+
+
+    </style>
+  </head>
+  
+<body>
+  {% block content %}{% endblock %}
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left"> <span style="color: #000; font-weight: bold;"> By <span style="color: rgb(255, 255, 255);"> Abhinav Kaushik </span><br></div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-back btn-social mx-2" href="https://www.linkedin.com/in/abhinav-kaushik-90552a194/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i></a>
+                  <a class="btn btn-back btn-social mx-2" href="https://github.com/abhinavk2404" target="_blank">
+                    <i class="fab fa-github"></i></a>
+                    <a class="btn btn-back btn-social mx-2" href="https://abhinav-kaushik.netlify.app/" target="_blank">
+                      <i class="fas fa-user"></i> </a>
+                  
+                    
+            </div>
+            <div class="col-lg-4 text-lg-right">
+              
+            <p style="font-weight: bold; color: #000;" >Copyright © 2021 : All Rights Reserved</p>  
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- {% block body %}{% endblock %} -->
+</body>  
+</html>

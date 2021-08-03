@@ -1,0 +1,297 @@
+{% extends "base_home.html" %}
+
+{% block title %}
+<title>Hepatitis Diagnosis</title>
+{% endblock %}
+
+ {% block heading %}
+      <h1>Welcome To <span style="color: rgba(255, 48, 75, 0.8);"> Hepatitis Diagnosis </span> <i class="fas fa-clinic-medical"></i> </h1>
+      <h2>Diagnose yourself free of cost with our Disease Diagnosis website</h2>
+  {% endblock %}
+  {% block info %}
+  
+    <div class="container">
+        <div class="section-title">
+          <h1 class="text-center">Information Required for Diagnosis</h1>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Steroid</h4>
+              <p>Steroids are a man-made version of chemicals, known as hormones,
+                   that are made naturally in the human body. Steroids
+                   are designed to act like these hormones to reduce inflammation.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Antiviral</h4>
+              <p>Antiviral is an agent that kills a virus or that 
+                  suppresses its ability to replicate and, hence,
+                   inhibits its capability to multiply and reproduce </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-lg-4">
+            <div class="service shadow">
+              
+              <h4>Spiders</h4>
+              <p>Spider nevi are benign vascular lesions mostly seen in patients
+                   with decompensated liver cirrhosis. Mostly, these are seen in the superior
+                   vena cava distribution and are small with pinhead size central vessel.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service c shadow">
+              
+              <h4>Ascites</h4>
+              <p>Ascites is the buildup of fluid in your belly, often due 
+                  to severe liver disease. The extra fluid makes your belly swell. </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Varices</h4>
+              <p> Esophageal varices are abnormal, enlarged veins in the
+                   tube that connects the throat and stomach (esophagus).
+                  This condition occurs most often in people with serious liver diseases.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Bilirubin</h4>
+              <p>Bilirubin attached by the liver to glucuronic acid, a glucose-derived
+                   acid, is called direct, or conjugated, bilirubin.
+                    Bilirubin not attached to glucuronic acid is called indirect, or unconjugated, bilirubin.
+                   All the bilirubin in your blood together is called total bilirubin.</p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+             
+              <h4>Alkaline phosphatase</h4>
+              <p>Alkaline phosphatase is one kind enzyme found in your body.
+                   Enzymes are proteins that help chemical reactions happen. 
+                   For instance, they can break big molecules down into smaller parts, or they can
+                   help smaller molecules join together to form bigger structures.</p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>SGOT</h4>
+              <p>The SGOT test is a blood test that’s part of a liver
+                   profile. It measures one of two liver enzymes,
+                   called serum glutamic-oxaloacetic transaminase. </p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Albumin</h4>
+              <p>An albumin blood test measures the amount of albumin in
+                   your blood. Albumin is a protein made by your liver. </p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Protime</h4>
+              <p>Prothrombin time (PT) is a blood test that measures the
+                   time it takes for the liquid portion (plasma) of your 
+                  blood to clot. A related blood test is partial thromboplastin time (PTT).</p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Histology</h4>
+              <p>Histology is a routine lab technique used to evaluate the morphology and 
+                  structure of cells, tissues, and organs under the microscope.</p>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+    <br>
+    {% endblock %}
+    {% block form %}
+        
+    
+        <div class="text-center">
+        <p class="h1">Hepatitis Diagnosis</p>
+        </div>
+        <br>
+    <div class="container">
+        <div class="col-md-10 col-centered">
+        <div class="col-md-12">
+                <form action="{{ url_for('hepatitis_pred') }}" method="post">
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="age">Age</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="age" name="age" placeholder="Age">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Gender</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="sex" name="sex" placeholder="1 for Male , 2 for Female">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="steroid">Steroid</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="steroid" name="steroid" placeholder="1 for Yes, 2 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="antivirals">Antivirals</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="antivirals" name="antivirals" placeholder="1 for Yes, 2 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="fatigue">Fatigue</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="fatigue" name="fatigue" placeholder="1 for Yes, 2 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="spiders">Spiders</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="spiders" name="spiders" placeholder="1 for Yes, 2 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="ascites">Ascites</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="ascites" name="ascites" placeholder="1 for Yes, 2 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="varices">Varices</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="varices" name="varices" placeholder="1 for Yes, 2 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="bilirubin">Bilirubin</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="bilirubin" name="bilirubin" placeholder="Bilirubin">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="alk_phosphate">Alkaline Phosphatase</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="alk_phosphate" name="alk_phosphate" placeholder="Alkaline Phosphatase">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sgot">SGOT</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="sgot" name="sgot" placeholder="SGOT">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="albumin">Albumin</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="albumin" name="albumin" placeholder="Albumin">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="protime">Protime</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="protime" name="protime" placeholder="Protime">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="histology">Histology</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required  type="text" class="form-control" id="histology" name="histology" placeholder="1 for Yes, 2 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        
+                        <center>
+                            <button type="submit" class="btn btn-light btn-lg btn-block" id="sbbtn" value="submit">Submit</button>
+                        </center>
+                        <br>
+                </form>
+            </div>
+        </div>
+    </div>
+        {% endblock %}

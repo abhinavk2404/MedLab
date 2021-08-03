@@ -1,0 +1,167 @@
+{% extends "base_home.html" %}
+
+{% block title %}
+<title>Chronic Kidney Disease Diagnosis</title>
+{% endblock %}
+
+ {% block heading %}
+      <h1>Welcome To <span style="color: rgba(255, 48, 75, 0.8);"> Chronic Kidney Disease Diagnosis </span> <i class="fas fa-clinic-medical"></i> </h1>
+      <h2>Diagnose yourself free of cost with our Disease Diagnosis website</h2>
+  {% endblock %}
+  {% block info %}
+  
+    <div class="container">
+        <div class="section-title">
+          <h1 class="text-center">Information Required for Diagnosis</h1>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Specific Gravity</h4>
+              <p>Specific gravity is defined as "The weight of a body compared with
+                   the weight of an equal amount of pure water at 4°C 
+                   (4°C is the temperature at which water is densest).
+                   This loss of weight is equal to the weight of the water displaced.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Albumin</h4>
+              <p>An albumin blood test measures the amount of albumin in
+                   your blood. Albumin is a protein made by your liver. </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-lg-4">
+            <div class="service shadow">
+              
+              <h4>Serum Creatinine</h4>
+              <p>Creatinine is a waste product that comes from 
+                  the normal wear and tear on muscles 
+                  of the body. Everyone has creatinine in their bloodstream.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service c shadow">
+              
+              <h4>Hemoglobin</h4>
+              <p>Hemoglobin is the protein molecule in red blood 
+                  cells that carries oxygen from the lungs to the body's tissues
+                   and returns carbon dioxide from the tissues back to the lungs.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Packed Cell Volume</h4>
+              <p> PCV or Packed Cell Volume Test is a test done to diagnose 
+                  polycythaemia, dehydration or anaemia in certain patients.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Hypertension</h4>
+              <p>High blood pressure (hypertension) is a common condition
+                   in which the long-term force of the blood against
+                    your artery walls is high enough that it may
+                   eventually cause health problems, such as heart disease.</p>
+            </div>
+          </div>
+          
+          
+  
+        </div>
+  
+      </div>
+    <br>
+    {% endblock %}
+    {% block form %}
+        
+    
+        <div class="text-center">
+        <p class="h1">Chronic Kidney Disease Diagnosis</p>
+        </div>
+        <br>
+    <div class="container">
+        <div class="col-md-10 col-centered">
+        <div class="col-md-12">
+                <form action="{{ url_for('kidney_pred') }}" method="post">
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sg">Specific Gravity</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required type="text" class="form-control" id="sg" name="sg" placeholder="Specific Gravity">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="al">Albumin</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required type="text" class="form-control" id="al" name="al" placeholder="Albumin">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sc">Serum Creatinine</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="sc" name="sc" placeholder="Serum Creatinine">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="hemo">Hemoglobin</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="hemo" name="hemo" placeholder="Hemoglobin">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="pcv">Packed Cell Volume</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input  required type="text" class="form-control" id="pcv" name="pcv" placeholder="Packed Cell Volume">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="htn">Hypertension</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="htn" name="htn" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        
+                        <center>
+                            <button type="submit" class="btn btn-light btn-lg btn-block" id="sbbtn" value="submit">Submit</button>
+                        </center>
+                        <br>
+                </form>
+            </div>
+        </div>
+    </div>
+        {% endblock %}

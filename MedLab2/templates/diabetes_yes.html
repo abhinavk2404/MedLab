@@ -1,0 +1,18 @@
+{% extends "base_result.html" %}
+
+{% block title %}
+<title>Diabetes Diagnosis</title>
+{% endblock %}
+
+ {% block heading %}
+        <h1 style="font-size: 100px; color: rgba(255, 48, 75, 0.8);"> <i class="fas fa-frown"></i> </h1>
+      <h1>You have been diagnosed with <span style="color: rgba(255, 48, 75, 0.8);"> Diabetes  </span> </h1>
+      <p class="alert alert-danger">The algorithm has diagnosed you with <a href="#" class="alert-link">Diabetes</a> based on your inputs. Please consult a Doctor.</p>
+       {% block button %}
+      <a href="/home_diabetes" class="main-btn"  id="backtored" >Back To Diagnosis</a>
+        {% endblock %} 
+      
+
+  {% endblock %}
+  
+    

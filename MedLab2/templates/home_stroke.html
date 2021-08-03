@@ -1,0 +1,194 @@
+{% extends "base_home.html" %}
+
+{% block title %}
+<title>Stroke Risk Diagnosis</title>
+{% endblock %}
+
+ {% block heading %}
+      <h1>Welcome To <span style="color: rgba(255, 48, 75, 0.8);"> Stroke Risk Diagnosis </span> <i class="fas fa-clinic-medical"></i> </h1>
+      <h2>Diagnose yourself free of cost with our Disease Diagnosis website</h2>
+  {% endblock %}
+  {% block info %}
+  
+    <div class="container">
+        <div class="section-title">
+          <h1 class="text-center">Information Required for Diagnosis</h1>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>Hypertension</h4>
+              <p>High blood pressure (hypertension) is a common condition
+                   in which the long-term force of the blood against
+                    your artery walls is high enough that it may
+                   eventually cause health problems, such as heart disease.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+             
+              <h4>Heart disease</h4>
+              <p>Heart disease refers to any condition affecting the heart. 
+                  There are many types, some of which are preventable. 
+                  Unlike cardiovascular disease, which includes problems with the entire 
+                  circulatory system, heart disease affects only the heart.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service c shadow">
+              
+              <h4>Average Glucose Level</h4>
+              <p>Average Glucose Level or Estimated average glucose (eAG) is an estimated average of your blood sugar
+                   (glucose) levels over a period of 2 to 3 months. It is based on your A1C blood test results.
+                   Knowing your eAG helps you predict your blood sugar levels over a time.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3  d-flex align-items-stretch mt-4 mt-md-4">
+            <div class="service shadow">
+              
+              <h4>BMI</h4>
+              <p>Body Mass Index (BMI) is a person's 
+                  weight in kilograms divided by
+                   the square of height in meters. </p>
+            </div>
+          </div>
+  
+          
+  
+        </div>
+  
+      </div>
+    <br>
+    {% endblock %}
+    {% block form %}
+    
+        <div class="text-center">
+        <p class="h1">Stroke Risk Diagnosis</p>
+        </div>
+        <br>
+    <div class="container">
+        <div class="col-md-10 col-centered">
+        <div class="col-md-12">
+                <form action="{{ url_for('stroke_pred') }}" method="post">
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="gender">Gender</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="gender" name="gender" placeholder="1 for Male, 0 for Female">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="age">Age</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="age" name="age" placeholder="Age">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="hypertension">Hypertension  </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="hypertension" name="hypertension" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="heart_disease">Heart Disease </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="heart_disease" name="heart_disease" placeholder="1 for Yes, 0 for No">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="ever_married">Marital Status</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="ever_married" name="ever_married" placeholder="1 for Yes, 0 for No">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="work_type">Work Type </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="work_type" name="work_type" placeholder="0 for Govt. Job, 1 for Never Worked, 2 for Private, 3 for Self-employed, 4 for Student">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Residence_type">Residence Type</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="Residence_type" name="Residence_type" placeholder="1 for Urban,0 for Rural">
+                            </div>
+                        </div>
+                        <br>
+			
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="avg_glucose_level">Average Glucose Level</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="avg_glucose_level" name="avg_glucose_level" placeholder="Average Glucose Level">
+                            </div>
+                        </div>
+                        <br>
+			
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="bmi">BMI</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="bmi" name="bmi" placeholder="BMI">
+                            </div>
+                        </div>
+                        <br>
+			
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="smoking_status">Smoking Status</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input required  type="text" class="form-control" id="smoking_status" name="smoking_status" placeholder="0 for Unknown, 1 for formerly smoked, 2 for never smoked, 3 for smokes ragularly">
+                            </div>
+                        </div>
+                        
+                        <br>
+                        <center>
+                            <button type="submit" class="btn btn-light btn-lg btn-block" id="sbbtn" value="submit">Submit</button>
+                        </center>
+                        <br>
+                </form>
+            </div>
+        </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        {% endblock %}
