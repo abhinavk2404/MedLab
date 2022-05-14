@@ -35,5 +35,4 @@ Programming Language - Python
 7. Tenserflow
 
 # Project link
-
-https://www.linkedin.com/posts/abhinav-kaushik-90552a194_medlab-a-disease-diagnosis-website-it-activity-6828365833245335552-qTTD
+https://youtu.be/vi_ICPSFcoU
